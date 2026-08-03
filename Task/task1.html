@@ -1,69 +1,95 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <!-- Defines character encoding and makes the page responsive -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title displayed on the browser tab -->
     <title>College Information Portal</title>
 </head>
 
 <body>
 
+<!-- Header section of the college portal -->
 <header>
     <h1>College Information Portal</h1>
-    <p>Welcome to the College Information Portal.</p>
+    <p>Welcome to the <b>ANITS College Information Portal</b>.</p>
 </header>
 
+
+<!-- Navigation section containing links to different sections -->
 <nav>
     <a href="#about">About</a> |
     <a href="#students">Students</a> |
     <a href="#registration">Registration</a> |
-    <a href="#media">Media</a>
+    <a href="#media">Media</a>q1    
 </nav>
 
+
+<!-- About section containing college information -->
 <section id="about">
 
+    <!-- Article contains the main college information -->
     <article>
 
-        <h2>About Our College</h2>
+        <h2>About ANITS</h2>
 
         <p>
-            ANITS is one of the leading engineering colleges offering quality education.
+            <b>Anil Neerukonda Institute of Technology and Sciences (ANITS)</b>
+            is an engineering college located in
+            <i>Sangivalasa, Visakhapatnam, Andhra Pradesh</i>.
+            The institution focuses on providing
+            <u>quality technical education</u> and developing students'
+            technical and professional skills.
         </p>
-
-        <h3>Text Formatting</h3>
 
         <p>
-            <b>Bold Text</b><br>
-            <i>Italic Text</i><br>
-            <u>Underlined Text</u><br>
-            H<sub>2</sub>O (Subscript)<br>
-            x<sup>2</sup> (Superscript)
+            ANITS offers undergraduate and postgraduate programs in
+            engineering and technology. The college provides facilities
+            such as <b>laboratories, library, computer facilities,
+            sports and other student activities</b>.
         </p>
 
-        <h3>Ordered List</h3>
+        <!-- Demonstrating subscript and superscript within college information -->
+        <p>
+            Engineering students study subjects involving formulas such as
+            H<sub>2</sub>O and mathematical expressions such as
+            x<sup>2</sup>.
+        </p>
 
+
+        <!-- College departments -->
+        <h3>Major Departments</h3>
+
+        <!-- Ordered list displays items using numbers -->
         <ol>
-            <li>CSE</li>
-            <li>AIML</li>
-            <li>ECE</li>
-            <li>EEE</li>
+            <li>Computer Science and Engineering (CSE)</li>
+            <li>Artificial Intelligence and Machine Learning (AIML)</li>
+            <li>Electronics and Communication Engineering (ECE)</li>
+            <li>Electrical and Electronics Engineering (EEE)</li>
         </ol>
 
-        <h3>Unordered List</h3>
 
+        <!-- College facilities -->
+        <h3>College Facilities</h3>
+
+        <!-- Unordered list displays items using bullets -->
         <ul>
-            <li>Library</li>
-            <li>Laboratories</li>
-            <li>Sports</li>
-            <li>Hostel</li>
+            <li>Central Library</li>
+            <li>Computer and Engineering Laboratories</li>
+            <li>Sports Facilities</li>
+            <li>Hostel Facilities</li>
+            <li>Transportation Facilities</li>
         </ul>
 
-        <h3>Hyperlinks</h3>
+
+        <!-- Hyperlinks to external websites -->
+        <h3>Important Links</h3>
 
         <a href="https://anits.edu.in" target="_blank">
-            College Website
+            <b>Visit ANITS College Website</b>
         </a>
 
         <br><br>
@@ -77,12 +103,15 @@
 </section>
 
 
+<!-- Student details section -->
 <section id="students">
 
     <h2>Student Details</h2>
 
+    <!-- Table containing student information -->
     <table border="1">
 
+        <!-- Table header row -->
         <tr>
             <th>Roll No</th>
             <th>Name</th>
@@ -90,6 +119,7 @@
             <th>Email</th>
         </tr>
 
+        <!-- Student 1 -->
         <tr>
             <td>101</td>
             <td>Bhanu</td>
@@ -97,6 +127,7 @@
             <td>bhanu@gmail.com</td>
         </tr>
 
+        <!-- Student 2 -->
         <tr>
             <td>102</td>
             <td>Rahul</td>
@@ -104,66 +135,80 @@
             <td>rahul@gmail.com</td>
         </tr>
 
+        <!-- Student 3 -->
         <tr>
             <td>103</td>
-            <td>Priya</td>
+            <td>Lalitha</td>
             <td>ECE</td>
-            <td>priya@gmail.com</td>
+            <td>lalitha@gmail.com</td>
         </tr>
 
     </table>
 
 
+    <!-- College images -->
     <h2>Images</h2>
 
-    <img src="college_logo.png" alt="College Logo" width="150">
+    <!-- College logo -->
+    <img src="Anits_logo.jpg" alt="ANITS College Logo" width="150">
 
-    <img src="college.jpg" alt="College Campus" width="350">
+    <!-- College campus image -->
+    <img src="anits_campus.jpg" alt="ANITS College Campus" width="350">
 
 </section>
 
 
+<!-- Student registration form section -->
 <section id="registration">
 
     <h2>Student Registration Form</h2>
 
     <form>
 
+        <!-- Text input for student name -->
         <label>Name:</label>
         <input type="text" placeholder="Enter Name">
 
         <br><br>
 
+        <!-- Email input -->
         <label>Email:</label>
         <input type="email" placeholder="Enter Email">
 
         <br><br>
 
+        <!-- Password input -->
         <label>Password:</label>
         <input type="password">
 
         <br><br>
 
+        <!-- HTML5 date input -->
         <label>Date of Birth:</label>
         <input type="date">
 
         <br><br>
 
+        <!-- HTML5 number input -->
         <label>Age:</label>
         <input type="number">
 
         <br><br>
 
+        <!-- HTML5 color input -->
         <label>Favourite Color:</label>
         <input type="color">
 
         <br><br>
 
+        <!-- HTML5 range input -->
         <label>Skill Level:</label>
         <input type="range" min="1" max="10">
 
         <br><br>
 
+
+        <!-- Radio buttons allow selecting one gender -->
         <label>Gender:</label>
         <br>
 
@@ -173,6 +218,8 @@
 
         <br><br>
 
+
+        <!-- Checkboxes allow selecting multiple hobbies -->
         <label>Hobbies:</label>
         <br>
 
@@ -182,6 +229,8 @@
 
         <br><br>
 
+
+        <!-- Dropdown list for selecting branch -->
         <label>Branch:</label>
 
         <select>
@@ -193,6 +242,8 @@
 
         <br><br>
 
+
+        <!-- Textarea for entering comments -->
         <label>Comments:</label>
 
         <br>
@@ -201,6 +252,8 @@
 
         <br><br>
 
+
+        <!-- Submit and Reset buttons -->
         <input type="submit" value="Submit">
         <input type="reset" value="Reset">
 
@@ -209,10 +262,12 @@
 </section>
 
 
+<!-- Multimedia section containing audio and video -->
 <section id="media">
 
     <h2>Audio</h2>
 
+    <!-- Audio player -->
     <audio controls>
         <source src="college.mp3" type="audio/mpeg">
         Your browser does not support audio.
@@ -221,6 +276,7 @@
 
     <h2>Video</h2>
 
+    <!-- Video player -->
     <video width="400" controls>
         <source src="college.mp4" type="video/mp4">
         Your browser does not support video.
@@ -229,14 +285,15 @@
 </section>
 
 
+<!-- Footer section of the webpage -->
 <footer>
 
     <p>
-        &copy; 2026 College Information Portal. All Rights Reserved.
+        &copy; 2026 <b>ANITS College Information Portal</b>.
+        All Rights Reserved.
     </p>
 
 </footer>
 
 </body>
 </html>
-```
